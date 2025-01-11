@@ -1,0 +1,17 @@
+{
+    "name": "React + Rust Development",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "npm install --prefix frontend && rustup update",
+    "forwardPorts": [3000, 8000],
+    "extensions": [
+      "ms-vscode.vscode-typescript-next",
+      "esbenp.prettier-vscode",
+      "rust-lang.rust-analyzer"
+    ],
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    }
+  }
+  
